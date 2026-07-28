@@ -2,22 +2,23 @@ print("1 - Add")
 print("2 - Subtract")
 print("3 - Multiply")
 print("4 - Divide")
-option=input("choose an operation:")
-result=0
+option = int(input("choose an operation: "))
+result = 0
 
 if(option in [1,2,3,4]):
     num1 = int(input("enter first number:"))
-    num2=int(input("enter second number: "))
+    num2 = int(input("enter second number: "))
 
-    if(option == "1"):
+    if(option == 1):
         result = num1 + num2
-    elif(option == "2"):
+    elif(option == 2):
         result = num1 - num2
-    elif(option == "3"):
+    elif(option == 3):
         result = num1 * num2
-    elif(option =="4"):
-        result = num1 // num2
+    elif(option == 4):
+        result = num1 / num2  
 
-
+    print("Result:", result)  
 else:
-    print("invalid operation entered")
+    print("Invalid operation entered")
+
